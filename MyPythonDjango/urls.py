@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+#1. 导入视图层
+from myweb import  views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^index/', views.index),
 ]
